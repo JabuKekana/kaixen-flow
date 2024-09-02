@@ -7,7 +7,7 @@
     padding: 2rem;
     margin: 4rem;
     border-radius: 1rem;
-    background: var(--gradient-bar)
+    background: var(--gradient-text);
 }
 
 .gpt3__cta-content {
@@ -15,7 +15,7 @@
     flex-direction: column;
 
     text-align: left;
-    color: #fff;
+    color: #ffffff;
 }
 
 .gpt3__cta-content p {

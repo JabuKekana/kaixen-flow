@@ -4,20 +4,28 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    title: 'Custom Software Solutions',
+    text: 'We provide tailored software solutions designed to meet your unique business needs, from initial concept to final deployment. Our team excels in creating scalable, efficient, and innovative software that drives your business forward.',
   },
   {
-    title: 'Become the tended active',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    title: 'Web Development',
+    text: 'Our web development services cover everything from simple websites to complex web applications. We build responsive, user-friendly, and SEO-optimized websites that enhance your online presence and engage your audience.',
   },
   {
-    title: 'Message or am nothing',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    title: 'Mobile App Development',
+    text: 'We develop high-quality mobile apps for iOS and Android platforms that offer seamless user experiences and help you reach your customers on the go. From concept to launch, our team ensures your app is both functional and engaging.',
   },
   {
-    title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'UI/UX Design',
+    text: 'Our UI/UX design services focus on creating intuitive, visually appealing, and user-centric designs. We strive to provide an engaging experience that meets user needs and enhances the overall interaction with your digital product.',
+  },
+  {
+    title: 'Maintenance and Support',
+    text: 'We offer comprehensive maintenance and support services to ensure your software remains up-to-date, secure, and fully functional. Our team is here to assist you with any updates, troubleshooting, or enhancements you may need.',
+  },
+  {
+    title: 'Quality Assurance and Testing',
+    text: 'Our quality assurance and testing services ensure that your software is reliable, bug-free, and performs optimally. We conduct thorough testing to identify and resolve any issues before your product goes live, providing a seamless user experience.',
   },
 ];
 

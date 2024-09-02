@@ -17,6 +17,7 @@ const Navbar = () => {
           <p><a href="#wgpt3">What is Maidport?</a></p>
           <p><a href="#possibility">Get In Touch</a></p>
           <p><a href="#features">Services</a></p>
+          <p><a href="#solutions">Solutions</a></p>
           <p><a href="#blog">Our Work</a></p>
         </div>
       </div>
@@ -35,6 +36,7 @@ const Navbar = () => {
             <p><a href="#wgpt3">What is Maidport?</a></p>
             <p><a href="#possibility">Get In Touch</a></p>
             <p><a href="#features">Services</a></p>
+            <p><a href="#solutions">Solutions</a></p>
             <p><a href="#blog">Our Work</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">

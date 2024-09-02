@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, Work, Possibility, Features, WhatIsMaidport, Header } from './containers';
+import { Footer, Work, Possibility, Features, WhatIsMaidport,Solutions, Header } from './containers';
 import { CTA, Brand, Navbar } from './components';
 
 import './App.css';
@@ -14,6 +14,7 @@ const App = () => (
     <Brand />
     <WhatIsMaidport />
     <Features />
+    <Solutions />
     <Possibility />
     <CTA />
     <Work />

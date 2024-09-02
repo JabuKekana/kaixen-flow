@@ -1,0 +1,131 @@
+.solutions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.solutions-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.solutions-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.solutions-heading p {
+    color: var(--color-subtext);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    margin-top: 1rem;
+}
+
+.solutions-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    perspective: 1000px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid transparent; 
+    border-image: linear-gradient(103.22deg, #0062ff -13.86%, #af520b 99.55%);
+    border-image-slice: 1;
+}
+
+.front {
+    padding: 1rem;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.card-button {
+    background-color: #313131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #022C50;
+}
+
+.back {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    transform: rotateY(180deg);
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: normal;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .front,
+    .back {
+        font-size: 16px;
+    }
+}
