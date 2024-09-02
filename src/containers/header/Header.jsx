@@ -12,7 +12,10 @@ import {
   DiDatabase,
   DiNodejsSmall,
   DiCode,
+  DiAndroid,
 } from "react-icons/di";
+import { LiaAws } from "react-icons/lia";
+import { RiFlutterFill } from "react-icons/ri";
 import ai from '../../assets/ai.png';
 import './header.css';
 
@@ -33,16 +36,18 @@ const Header = () => (
         <DiHtml5 />
         <DiJavascript1 />
         <DiPython />
-        <DiJava /> 
-        <DiPhp />
+        <DiJava />
+        <DiAndroid/>
+        <RiFlutterFill />
         <DiReact />
-        <DiNodejsSmall />      
+        <DiNodejsSmall /> 
+        <DiPhp />     
         <DiMysql />
         <DiPostgresql />
         <DiDatabase />
-        
+        <LiaAws />
       </div>
-      <p>We have worked with various technologies</p>
+      <p>We work with various technologies</p>
     </div>
 
     <div className="gpt3__header-image">
