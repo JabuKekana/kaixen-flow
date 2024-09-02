@@ -12,6 +12,7 @@ import {
   DiDatabase,
   DiNodejsSmall,
   DiCode,
+  DiAndroid,
 } from "react-icons/di";
 import ai from '../../assets/ai.png';
 import './header.css';
@@ -40,9 +41,9 @@ const Header = () => (
         <DiMysql />
         <DiPostgresql />
         <DiDatabase />
-        
+        <DiAndroid/>
       </div>
-      <p>We have worked with various technologies</p>
+      <p>We work with various technologies</p>
     </div>
 
     <div className="gpt3__header-image">
