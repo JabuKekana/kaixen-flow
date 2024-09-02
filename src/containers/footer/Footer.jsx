@@ -3,7 +3,7 @@ import gpt3Logo from '../../assets/MP 1.png';
 import './footer.css';
 
 const Footer = ({ onOpenModal }) => (
-  <div className="gpt3__footer section__padding">
+  <div className="gpt3__footer section__padding" id="footer">
     <div className="gpt3__footer-heading">
       <h1 className="gradient__text">Start Your Project with Us – Request a Quote Now</h1>
     </div>
