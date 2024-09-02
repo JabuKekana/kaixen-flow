@@ -5,8 +5,8 @@ import './solutions.css';
 const solutionsData = [
   {
     icon: <FaCode />,
-    title: 'Custom Software Solutions',
-    description: 'Tailor-made software designed to meet unique business needs from concept to deployment. This encompasses various aspects such as development, integration, and maintenance.',
+    title: 'Tailored Software Solutions ',
+    description: 'Boost your business with software solutions tailored to your unique challenges. We craft efficient, versatile software designed to support your growth and adapt to your evolving needs.',
   },
   {
     icon: <FaRobot />,

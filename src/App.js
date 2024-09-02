@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Footer, Work, Approach, Features, WhatIsMaidport, Solutions, Header,  QuoteModal } from './containers';
-import { CTA, Brand, Navbar } from './components';
+import { CTA, Brand, Navbar, ScrollUp } from './components';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="gradient__bg">
-        <Navbar />
+        <Navbar  onOpenModal={() => setModalOpen(true)}/>
         <Header />
       </div>
       <Brand />
@@ -19,10 +19,11 @@ const App = () => {
       <Features />
       <Solutions />
       <Approach />
-      <CTA />
+      <CTA   onOpenModal={() => setModalOpen(true)}/>
       <Work />
       <Footer onOpenModal={() => setModalOpen(true)} />
       <QuoteModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+      <ScrollUp />
     </div>
   );
 };

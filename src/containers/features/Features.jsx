@@ -4,8 +4,8 @@ import './features.css';
 
 const featuresData = [
   {
-    title: 'Custom Software Solutions',
-    text: 'We provide tailored software solutions designed to meet your unique business needs, from initial concept to final deployment. Our team excels in creating scalable, efficient, and innovative software that drives your business forward.',
+    title: 'Custom Software Development',
+    text: 'Our custom software development services focus on creating bespoke applications that cater specifically to your business needs, ensuring scalability, reliability, and innovation in every solution.',
   },
   {
     title: 'Web Development',

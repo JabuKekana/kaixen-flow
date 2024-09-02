@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/MP 1.png';
+import logo from '../../assets/MP 1 light - top.png';
 import './navbar.css';
 
-const Navbar = () => {
+const Navbar =  ({ onOpenModal }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -15,15 +15,14 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_container">
           <p><a href="#home">Home</a></p>
           <p><a href="#wgpt3">What is Maidport?</a></p>
-          <p><a href="#possibility">Get In Touch</a></p>
+          <p><a href="#footer">Get In Touch</a></p>
           <p><a href="#features">Services</a></p>
           <p><a href="#solutions">Solutions</a></p>
           <p><a href="#blog">Our Work</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <button type="button" onClick={onOpenModal}>Get A Quote</button>
       </div>
       <div className="gpt3__navbar-menu">
         {toggleMenu
@@ -40,8 +39,7 @@ const Navbar = () => {
             <p><a href="#blog">Our Work</a></p>
           </div>
           <div className="gpt3__navbar-menu_container-links-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
+          <button type="button" onClick={onOpenModal}>Get A Quote</button>
           </div>
         </div>
         )}
