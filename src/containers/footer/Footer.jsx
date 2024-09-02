@@ -19,21 +19,19 @@ const Footer = ({ onOpenModal }) => (
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Links</h4>
-        <p>Overons</p>
-        <p>Social Media</p>
-        <p>Counters</p>
-        <p>Contact</p>
+        <p>Linkedin</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p></p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Company</h4>
         <p>Terms & Conditions </p>
         <p>Privacy Policy</p>
-        <p>Contact</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
         <p>Johannesburg, South Africa</p>
-        <p>+27 81 344 8571</p>
         <p>support@maidport.co.za</p>
       </div>
     </div>
