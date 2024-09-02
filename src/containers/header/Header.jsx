@@ -14,6 +14,7 @@ import {
   DiCode,
   DiAndroid,
 } from "react-icons/di";
+import { LiaAws } from "react-icons/lia";
 import ai from '../../assets/ai.png';
 import './header.css';
 
@@ -41,6 +42,7 @@ const Header = () => (
         <DiMysql />
         <DiPostgresql />
         <DiDatabase />
+        <LiaAws />
         <DiAndroid/>
       </div>
       <p>We work with various technologies</p>
