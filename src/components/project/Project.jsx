@@ -1,7 +1,7 @@
 import React from 'react';
 import './project.css';
 
-const Article = ({ imgUrl, date, text }) => (
+const Article = ({ imgUrl, date, text, link }) => (
   <div className="gpt3__blog-container_article">
     <div className="gpt3__blog-container_article-image">
       <img src={imgUrl} alt="blog_image" />
@@ -11,7 +11,11 @@ const Article = ({ imgUrl, date, text }) => (
         <p>{date}</p>
         <h3>{text}</h3>
       </div>
-      <p>Read More</p>
+      {link && (
+        <a href={link} target="_blank" rel="noopener noreferrer" className="visit-site-button">
+          Visit Site
+        </a>
+      )}
     </div>
   </div>
 );

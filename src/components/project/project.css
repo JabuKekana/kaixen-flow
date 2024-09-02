@@ -27,9 +27,9 @@
     height: 100%;
 }
 
-.gpt3__blog-container_article-content p {
+.gpt3__blog-container_article-content .visit-site-button {
     font-family: var(--font-family);
-    font-size: 11.65px;
+    font-size: 12.65px;
     font-weight: 700;
     line-height: 35px;
 
@@ -38,7 +38,7 @@
 
 .gpt3__blog-container_article-content h3 {
     font-family: var(--font-family);
-    font-size: 25.11px;
+    font-size: 18.11px;
     font-weight: 800;
     line-height: 30.30px;
     

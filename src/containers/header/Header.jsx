@@ -20,7 +20,7 @@ const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
       <h1 className="gradient__text">Let Us Transform Your Challenges Into Solutions.</h1>
-      <p>From WordPress websites and web apps to mobile applications, desktop software, and AI technology, Maidport delivers tailored solutions to meet your needs. Whether you're starting from scratch or enhancing an existing product, we specialize in transforming your challenges into opportunities with cutting-edge tech.</p>
+      <p>At Maidport, we leverage technology to address your unique challenges and turn them into opportunities. Whether you're starting fresh or enhancing an existing product, our tailored solutions—spanning WordPress websites, web apps, mobile applications, desktop software, and AI technology—are designed to meet your specific needs with cutting-edge tech.</p>
 
       <div className="gpt3__header-content__input">
         <input type="email" placeholder="Your Email Address" />

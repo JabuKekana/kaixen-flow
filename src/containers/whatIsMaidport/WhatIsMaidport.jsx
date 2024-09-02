@@ -5,11 +5,10 @@ import './whatIsMaidport.css';
 const WhatIsMaidport = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
-      <Feature title="What is Maidport?" text="We are Maidport, short for Multiple Aid Port, committed to providing a wide range of custom software solutions designed to address the unique challenges of your business. Our team of experienced professionals leverages cutting-edge technologies and industry best practices to create reliable, scalable, and secure applications." />
+      <Feature title="What is Maidport?" text="Maidport, short for Multiple Aid Port, is dedicated to delivering custom software solutions that address the specific challenges faced by your business. Our team of experts uses the latest technologies and industry best practices to build reliable, scalable, and secure applications." />
     </div>
     <div className="gpt3__whatgpt3-heading">
-      <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-      <p>Explore the Library</p>
+      <h1 className="gradient__text">Transform Your Ambitions into Achievements with Maidport.</h1>
     </div>
     <div className="gpt3__whatgpt3-container">
       <Feature title="Software Solutions" text="Elevate your business with tailor-made software solutions designed to fit your unique requirements." />

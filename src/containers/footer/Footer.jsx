@@ -2,14 +2,14 @@ import React from 'react';
 import gpt3Logo from '../../assets/MP 1.png';
 import './footer.css';
 
-const Footer = () => (
+const Footer = ({ onOpenModal }) => (
   <div className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+      <h1 className="gradient__text">Start Your Project with Us – Request a Quote Now</h1>
     </div>
 
-    <div className="gpt3__footer-btn">
-      <p>Get A Qoute</p>
+    <div className="gpt3__footer-btn" onClick={onOpenModal}>
+      <p>Get A Quote</p>
     </div>
 
     <div className="gpt3__footer-links">
@@ -33,7 +33,7 @@ const Footer = () => (
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
         <p>Johannesburg, South Africa</p>
-        <p>085-132567</p>
+        <p>+27 81 344 8571</p>
         <p>support@maidport.co.za</p>
       </div>
     </div>
