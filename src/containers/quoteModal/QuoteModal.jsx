@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './quoteModal.css';
 import logo from '../../assets/MP 1.png';
+import * as emailjs from "emailjs-com";
 
 const QuoteModal = ({ isOpen, onClose }) => {
   const [userType, setUserType] = useState('individual');
@@ -25,19 +26,27 @@ const QuoteModal = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate form submission
-    setSuccessMessage('Your quote request has been submitted successfully!');
-    // Reset form fields
-    setFormData({
-      companyName: '',
-      contactPersonEmail: '',
-      contactPersonFullName: '',
-      contactPersonPhone: '',
-      fullName: '',
-      email: '',
-      phone: '',
-      projectDescription: ''
-    });
+
+    emailjs.send('service_e6tefbh', 'template_fwebryn', formData, 'x0oTvmCZcpuYCiE9T')
+        .then((response) => {
+          console.log('Email sent successfully:', response);
+          setSuccessMessage('Your quote request has been submitted successfully!');
+          // Reset form fields
+          setFormData({
+            companyName: '',
+            contactPersonEmail: '',
+            contactPersonFullName: '',
+            contactPersonPhone: '',
+            fullName: '',
+            email: '',
+            phone: '',
+            projectDescription: ''
+          });
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          setSuccessMessage('There was an error submitting your request. Please try again.');
+        });
   };
 
   if (!isOpen) return null;
