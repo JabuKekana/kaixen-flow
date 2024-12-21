@@ -8,14 +8,14 @@ const Article = ({ imgUrl, date, text, link }) => (
     </div>
     <div className="gpt3__blog-container_article-content">
       <div>
-        <p>{date}</p>
-        <h3>{text}</h3>
+        <p className={'date'}>{date}</p>
+        <div className={'body'} dangerouslySetInnerHTML={{__html: text}}/>
       </div>
-      {link && (
+        {link && (
         <a href={link} target="_blank" rel="noopener noreferrer" className="visit-site-button">
-          Visit Site
+            Visit Site
         </a>
-      )}
+        )}
     </div>
   </div>
 );

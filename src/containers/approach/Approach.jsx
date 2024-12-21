@@ -8,7 +8,7 @@ const Approach = () => (
       <img src={possibilityImage} alt="possibility" />
     </div>
     <div className="gpt3__possibility-content">
-    <h1 className="gradient__text">Our Approach to Innovation and Excellence</h1>
+        <h1 className="gradient__text">Our Approach to Innovation and Excellence</h1>
         <p>
             At Maidport, we believe in a structured and collaborative approach to turning your ideas into impactful solutions.
             Our process is built on understanding your unique needs, leveraging cutting-edge technology, and maintaining a
@@ -16,7 +16,6 @@ const Approach = () => (
             and excellence every step of the way. Discover how our thoughtful approach transforms your vision into reality and
             drives your success.
         </p>
-
     </div>
   </div>
 );

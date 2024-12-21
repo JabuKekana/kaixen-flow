@@ -14,11 +14,10 @@ const App = () => {
         <Navbar  onOpenModal={() => setModalOpen(true)}/>
         <Header />
       </div>
-      <Brand />
-      <WhatIsMaidport />
-      <Features />
-      <Solutions />
-      <Approach />
+        <Approach />
+        <WhatIsMaidport />
+        <Features />
+        <Solutions />
       <CTA   onOpenModal={() => setModalOpen(true)}/>
       <Work />
       <Footer onOpenModal={() => setModalOpen(true)} />

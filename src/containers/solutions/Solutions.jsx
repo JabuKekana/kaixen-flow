@@ -22,12 +22,7 @@ const solutionsData = [
     icon: <FaDatabase />,
     title: 'Digital Transformation Solutions',
     description: 'Strategies and technologies aimed at modernizing and optimizing business processes and operations through digital means.',
-  },
-  {
-    icon: <FaUserLock />,
-    title: 'Cybersecurity Solutions',
-    description: 'Comprehensive security measures including software, monitoring, and consulting to protect against digital threats.',
-  },
+  }
 ];
 
 const Solutions = () => (
