@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --font-sans: 'Nunito Sans', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
   --font-serif: 'Cormorant Garamond', serif;
-  --color-background: #faf5ee;
-  --color-foreground: #34291f;
-  --color-muted: #6f6257;
-  --color-soft: #907667;
-  --color-accent: #d2763e;
-  --gradient-accent: linear-gradient(135deg, #d2763e, #e59a69);
+  --color-background: #faf6eb;
+  --color-foreground: #332b2e;
+  --color-muted: #655a5d;
+  --color-soft: #897c76;
+  --color-accent: #542d45;
+  --color-accent-strong: #3d2032;
+  --color-cream: #f3ecdc;
+  --color-paper: #faf6eb;
+  --color-sage: #9da58c;
+  --color-butter: #e8d29b;
+  --color-stone: #b9ad9d;
+  --gradient-accent: linear-gradient(135deg, #542d45 0%, #3d2032 100%);
 }
 
 * {
@@ -24,13 +30,19 @@ html {
 body {
   min-width: 320px;
   background:
-    radial-gradient(circle at top center, rgba(176, 132, 236, 0.22), transparent 34rem),
-    linear-gradient(180deg, rgba(205, 172, 248, 0.22) 0%, rgba(241, 232, 255, 0.14) 18%, #f8f1ea 42%, #f5ece4 100%);
+    radial-gradient(circle at top center, rgba(84, 45, 69, 0.16), transparent 30rem),
+    radial-gradient(circle at 18% 24%, rgba(157, 165, 140, 0.14), transparent 20rem),
+    linear-gradient(180deg, rgba(243, 236, 220, 0.92) 0%, rgba(250, 246, 235, 0.98) 18rem, #faf6eb 52%, #f3ecdc 100%);
   color: var(--color-foreground);
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(84, 45, 69, 0.18);
+  color: var(--color-foreground);
 }
 
 button,
