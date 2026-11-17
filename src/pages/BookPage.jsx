@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { bookingOptions, upcomingEvents } from '../data/siteContent';
+import { bookingOptions, upcomingEvents, socialLinks } from '../data/siteContent';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { submitBooking } from '../services/bookingService';
 
 const initialState = {
@@ -101,7 +102,7 @@ export function BookPage({ search }) {
         <p>Secure your place in the next Pilates-inspired experience.</p>
       </div>
 
-      <form className="booking-form" onSubmit={handleSubmit}>
+      {upcomingEvents.length === 0 ? <div className="booking-empty"><p className="script">let’s find your flow</p><h2>Something<br /><em>just for you.</em></h2><p>Our next event dates are taking shape. In the meantime, chat to us about a private session, a group gathering or your next wellness experience.</p><a className="button button--primary" href={socialLinks[2].href} target="_blank" rel="noreferrer">Enquire on WhatsApp <FiArrowUpRight /></a></div> : <form className="booking-form" onSubmit={handleSubmit}>
         <div className="booking-form__grid">
           <label>
             <span>Name</span>
@@ -197,7 +198,7 @@ export function BookPage({ search }) {
         {status.message ? (
           <p className={`booking-status booking-status--${status.type}`}>{status.message}</p>
         ) : null}
-      </form>
+      </form>}
     </section>
   );
 }

@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { AppLink } from '../components/AppLink';
-import { pastEvents, upcomingEvents } from '../data/siteContent';
+import { pastEvents, upcomingEvents, socialLinks } from '../data/siteContent';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 function EventCard({ currentPath, event, isPast = false, navigate }) {
   return (
     <article className={`event-card${isPast ? ' event-card--past' : ''}`}>
       <div className="event-card__media">
-        <img alt={event.title} src={event.image} />
+        <img alt={event.title} src={event.image} loading="lazy" />
         <div className="event-card__badge">{event.date}</div>
       </div>
       <div className="event-card__body">
@@ -47,7 +48,7 @@ function PastEvents({ currentPath, navigate }) {
       <details className="past-events__details">
         <summary className="past-events__summary">
           <span>
-            <span className="eyebrow">Passed Events</span>
+            <span className="eyebrow">The archive / Past events</span>
           </span>
           <span className="past-events__count">{pastEvents.length}</span>
         </summary>
@@ -101,13 +102,14 @@ export function EventsPage({ currentPath, navigate, search }) {
     <>
       <section className="page-hero">
         <div>
-          <p className="eyebrow">Upcoming</p>
+          <p className="eyebrow">The club diary / Events & experiences</p>
           <h1>
-            <em>Curated</em> experiences.
+            Good things.<br /><em>Better together.</em>
           </h1>
         </div>
       </section>
 
+      {upcomingEvents.length === 0 && <section className="events-empty"><p className="script">a little something is in the works</p><h2>Your next flow<br />is <em>on its way.</em></h2><p>New dates are coming. For private sessions, group experiences and collaborations, let’s make a plan.</p><a href={socialLinks[2].href} className="button button--primary" target="_blank" rel="noreferrer">Get in touch <FiArrowUpRight /></a></section>}
       <section className="event-grid">
         {upcomingEvents.map((event) => (
           <EventCard currentPath={currentPath} event={event} key={event.title} navigate={navigate} />

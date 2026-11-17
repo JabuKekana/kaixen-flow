@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppLink } from '../AppLink';
 import { Brand } from '../Brand';
 import { footerLinks, socialLinks } from '../../data/siteContent';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 export function Footer({ currentPath, navigate }) {
   const [email, setEmail] = useState('');
@@ -46,17 +47,18 @@ export function Footer({ currentPath, navigate }) {
         </div>
 
         <div>
-          <h3 className="site-footer__heading">Stay Connected</h3>
-          <p className="site-footer__text">Soft mornings, new events and invitations straight to your inbox.</p>
+          <h3 className="site-footer__heading">Come flow with us</h3>
+          <p className="site-footer__text">Your next feel-good ritual is waiting. Start with your email and let’s find your flow.</p>
           <form className="newsletter-form" onSubmit={handleSubmit}>
             <input
               aria-label="Email address"
               onChange={(event) => setEmail(event.target.value)}
               placeholder="your@email.com"
+              required
               type="email"
               value={email}
             />
-            <button type="submit">Join</button>
+            <button type="submit" aria-label="Continue to booking" title="Continue to booking"><FiArrowUpRight /></button>
           </form>
           <div className="social-row">
             {socialLinks.map((link) => (
@@ -70,10 +72,7 @@ export function Footer({ currentPath, navigate }) {
 
       <div className="site-footer__meta">
         <p>© KaixenFlow 2026</p>
-        <div>
-          <a href="/">Privacy Policy</a>
-          <a href="/">Terms & Conditions</a>
-        </div>
+        <div><span>Johannesburg, South Africa</span><span>Move. Connect. Repeat.</span></div>
       </div>
     </footer>
   );

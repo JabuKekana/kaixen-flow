@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AppLink } from '../components/AppLink';
-import { upcomingEvents } from '../data/siteContent';
+import { events } from '../data/siteContent';
 import { FiCheckCircle, FiCalendar, FiMapPin, FiClock, FiMail } from 'react-icons/fi';
 
 const formatCurrency = (amount) =>
@@ -27,7 +27,7 @@ export function ConfirmationPage({ currentPath, navigate, search }) {
     const bookingRef = params.get('ref') || 'KX-' + Date.now().toString(36).toUpperCase();
 
     if (eventTitle) {
-      const event = upcomingEvents.find(e => e.title === eventTitle);
+      const event = events.find(e => e.title === eventTitle);
       setBookingData({
         event,
         name: name || 'Guest',

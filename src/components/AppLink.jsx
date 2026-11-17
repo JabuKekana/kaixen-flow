@@ -15,6 +15,8 @@ export function AppLink({ children, className, currentPath, href, navigate, onCl
       return;
     }
 
+    if (new URL(href, window.location.origin).origin !== window.location.origin) return;
+
     event.preventDefault();
     if (onClick) onClick();
     navigate(href);

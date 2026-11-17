@@ -6,13 +6,13 @@ import { aboutPillars, homeImages } from '../data/siteContent';
 export function AboutPage({ currentPath, navigate }) {
   return (
     <>
-      <section className="page-hero grid-two">
+      <section className="page-hero grid-two" data-reveal>
         <div>
-          <p className="eyebrow">About KaixenFlow</p>
+          <p className="eyebrow">The club / Our story</p>
           <h1>
-            Movement is more
+            A little movement.
             <br />
-            <em>than exercise.</em>
+            <em>A lot of meaning.</em>
           </h1>
           <div className="stacked-copy">
             <p>
@@ -40,7 +40,7 @@ export function AboutPage({ currentPath, navigate }) {
         />
       </section>
 
-      <section className="section">
+      <section className="section about-pillars" data-reveal>
         <div className="section-heading section-heading--centered">
           <p className="eyebrow">The Intersection</p>
           <h2>

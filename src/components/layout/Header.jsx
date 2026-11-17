@@ -2,6 +2,7 @@ import React from 'react';
 import { AppLink } from '../AppLink';
 import { Brand } from '../Brand';
 import { navLinks } from '../../data/siteContent';
+import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi';
 
 export function Header({ currentPath, menuOpen, navigate, setMenuOpen }) {
   return (
@@ -32,24 +33,23 @@ export function Header({ currentPath, menuOpen, navigate, setMenuOpen }) {
             href="/book"
             navigate={navigate}
           >
-            Book Now
+            Find your flow <FiArrowUpRight />
           </AppLink>
           <button
             aria-expanded={menuOpen}
             aria-label="Toggle menu"
+            aria-controls="mobile-navigation"
             className="menu-toggle"
             onClick={() => setMenuOpen((open) => !open)}
             type="button"
           >
-            <span />
-            <span />
-            <span />
+            {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
       </div>
 
       {menuOpen ? (
-        <div className="mobile-nav">
+        <nav className="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
           {navLinks.map((link) => (
             <AppLink
               key={link.href}
@@ -71,7 +71,7 @@ export function Header({ currentPath, menuOpen, navigate, setMenuOpen }) {
           >
             Book Now
           </AppLink>
-        </div>
+        </nav>
       ) : null}
     </header>
   );
