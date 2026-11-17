@@ -8,6 +8,7 @@ import { ConfirmationPage } from "./pages/ConfirmationPage";
 import { EventsPage } from "./pages/EventsPage";
 import { GalleryPage } from "./pages/GalleryPage";
 import { HomePage } from "./pages/HomePage";
+import { AdminPage } from "./pages/AdminPage";
 import { useSimpleRouter } from "./hooks/useSimpleRouter";
 
 const pageMap = {
@@ -46,6 +47,8 @@ function App() {
   }, [path]);
 
   const ActivePage = pageMap[path] || HomePage;
+
+  if (path === "/bookings") return <AdminPage navigate={navigate} />;
 
   return (
     <div className={`site-shell${path === "/" ? " site-shell--home" : ""}`}>

@@ -145,8 +145,8 @@ const scheduledEvents = [
   {
     description:
       'A 4-week summer reset for body and mind. Move. Mind. Glow. Join us for intentional movement, strength building, and mindset shifts designed to sculpt, energise and transform.',
-    date: 'Starts Sat · 12 September 2026',
-    endsAt: '2026-10-03T23:59:59+02:00',
+    date: 'Starts Sat · 12 December 2026',
+    endsAt: '2026-12-03T23:59:59+02:00',
     image: bootcampImage,
     price: 'R850 Full Series / R200 Drop In',
     priceAmount: 850,
@@ -159,8 +159,8 @@ const scheduledEvents = [
   {
     description:
       'Celebrating growth, community and every girl who showed up for herself. A day of Pilates, wellness, brunch and connection in a beautiful setting.',
-    date: 'Sat · 03 October 2026',
-    endsAt: '2026-10-03T23:59:59+02:00',
+    date: 'Sat · 03 December 2026',
+    endsAt: '2026-12-03T23:59:59+02:00',
     image: birthdayImage,
     price: 'R695',
     priceAmount: 695,
